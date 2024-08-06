@@ -1,14 +1,17 @@
 using backend.Models;
 
-public class WeatherRepository : IWeatherRepository
+namespace backend.Repositories
 {
-    public IEnumerable<WeatherForecast> GetAll()
+    public class WeatherRepository : IWeatherRepository
     {
-        // 예제 데이터 생성
-        return new List<WeatherForecast>
+        public IEnumerable<WeatherForecast> GetAll()
+        {
+            // 예제 데이터 생성
+            return new List<WeatherForecast>
         {
             new WeatherForecast { Date = DateTime.Now, TemperatureC = 25, Summary = "Sunny" },
             new WeatherForecast { Date = DateTime.Now.AddDays(1), TemperatureC = 28, Summary = "Hot" }
         };
+        }
     }
 }

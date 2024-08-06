@@ -1,9 +1,11 @@
+using backend.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-builder.Services.AddScoped<IWeatherService, WeatherService>();
-builder.Services.AddScoped<IWeatherRepository, WeatherRepository>();
+// Use the extension method
+builder.Services.AddCustomServices();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

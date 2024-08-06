@@ -1,6 +1,9 @@
 using backend.Models;
 
-public interface IWeatherService
+namespace backend.Services
 {
-    IEnumerable<WeatherForecast> GetForecasts();
+    public interface IWeatherService
+    {
+        IEnumerable<WeatherForecast> GetForecasts();
+    }
 }

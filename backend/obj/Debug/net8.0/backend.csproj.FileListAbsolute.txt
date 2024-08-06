@@ -64,3 +64,4 @@
 /Users/jina/DocuSignHub/backend/obj/Debug/net8.0/backend.pdb
 /Users/jina/DocuSignHub/backend/obj/Debug/net8.0/backend.genruntimeconfig.cache
 /Users/jina/DocuSignHub/backend/obj/Debug/net8.0/ref/backend.dll
+/Users/jina/DocuSignHub/backend/obj/Debug/net8.0/backend.sourcelink.json
